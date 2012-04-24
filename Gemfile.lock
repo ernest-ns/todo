@@ -37,10 +37,12 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.1)
+    daemon_controller (1.0.0)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.3.0)
       multi_json (~> 1.0)
+    fastthread (1.0.7)
     haml (3.1.4)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -61,6 +63,11 @@ GEM
     mime-types (1.18)
     multi_json (1.3.2)
     mysql2 (0.3.11)
+    passenger (3.0.12)
+      daemon_controller (>= 0.2.5)
+      fastthread (>= 1.0.1)
+      rack
+      rake (>= 0.8.1)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -128,6 +135,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   mysql2
+  passenger
   rails (= 3.2.3)
   rspec-rails (>= 2.0.1)
   sass-rails (~> 3.2.3)
