@@ -1,0 +1,5 @@
+* on render of tasksListView show and display all the tasks present in the backend
+* after creating the new task refresh the taskListView to show the newest task
+* Come up with a complex view for each task i.e, label with checkbox
+* On checking each checkbox update the task on frontend and on backend
+* Add editing feature for each task

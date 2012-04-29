@@ -6,7 +6,7 @@ class TasksController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @tasks }
+      format.json { render json: @tasks.to_json(:only => [:description , :done]) }
     end
   end
 

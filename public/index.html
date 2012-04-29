@@ -7,16 +7,25 @@
     <script type="text/javascript">
     </script>
     <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
-    <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <script type="text/javascript" src="js/json2.js"></script>
     <script type="text/javascript" src="js/underscore.js"></script>
     <script type="text/javascript" src="js/backbone.js"></script>
   </head>
   <body>
-  	<script type="text/template" id="tasks-list-view-template">
-  		<input class="new-task-text" type="text"/>
-  		<input class="add-new-task-button" type="button" value="Add new task">
-  		<ul class= "tasks-list-view"></ul>
-  	</script>
+    <script type="text/template" id="tasks-list-view-template">
+      <form class="new-task-form">
+        <input class="new-task-text" type="text"/>
+        <submit class="add-new-task-button" type="button" value="Add new  task"/>
+      </form>
+      <ul class="tasks-list-view"></ul>
+    </script>
+    <script type="text/template" id="tasks-view-template">
+      <li class="list-item">
+        <p class="task-description">
+          <%= taskDescription %>
+        </p>
+      </li>
+    </script>
     <script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script>
     <script type="text/javascript" src="js/models/task.js"></script>
     <script type="text/javascript" src="js/collections/tasks.js"></script>

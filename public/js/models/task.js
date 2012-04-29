@@ -1,11 +1,11 @@
 var Task = Backbone.Model.extend({
 
-    defaults: {
-	description : "",
-	done : false
-    },
+  defaults: {
+    description : "",
+    done : false
+  },
 
-    initialize: function() {
-    }
+  initialize: function() {
+  }
 
 });
